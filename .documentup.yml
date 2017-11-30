@@ -1,17 +1,6 @@
-$.ajax({
-  url: "http://documentup.com/compiled",
-  dataType: "jsonp",
-  data: {
-    content: "# test",
-    name: "Test JSONP!"
-  },
-  success: function(resp){
-    // `status` is always provided
-    if (resp.status == 200) {
-      // Write to your document
-      document.open();
-      document.write(resp.html);
-      document.close();
-    }
-  }
-});
+name: DocumentUpTest
+twitter:
+  - BananasLin
+  - DocumentUpTest
+google_analytics: UA-5201171-14
+travis: true
