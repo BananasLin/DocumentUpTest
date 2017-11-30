@@ -4,6 +4,17 @@
     <script src="documentup.min.js"></script>
     <script>
       DocumentUp.document("BananasLin/DocumentUpTest");
+      DocumentUp.document({
+        repo:  "BananasLin/DocumentUpTest",
+        name: "DocumentUpTest",
+        twitter: [
+          "BananasLin",
+          "DocumentUpTest"
+        ],
+        afterRender: function(){
+          alert("rendered");
+        }
+      });
     </script>
   </head>
   <body></body>
